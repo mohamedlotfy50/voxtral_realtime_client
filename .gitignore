@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual envs / conda
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.hypothesis/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Local config (real server addresses live here; config.example.yaml is committed)
+config.yaml
+config.local.yaml
+.env
+
+# Large sample audio / benchmark data (add your own WAVs to data/)
+data/
+
+# HuggingFace model cache (pyannote diarization models)
+hf_cache/

@@ -1,0 +1,26 @@
+# Server & API Configuration
+# Copy this file to config.yaml and fill in your server's address.
+served_model_name: "Voxtral-Mini-4B-Realtime-2602"
+api_key: "sk-local-voxtral-realtime"
+diarize_host: "localhost"
+diarize_port: 8001
+stt_host: "localhost"
+stt_port: 8000
+trust_remote_code: true
+
+# Audio Hardware & Format Settings
+sample_rate: 16000
+channels: 1
+sample_width: 2  # 16-bit PCM
+
+# Voxtral DSM Constants
+token_ms: 80.0  # 1000 / 12.5 Hz = 80ms per token
+streaming_pad_id: 32
+streaming_word_id: 33
+special_token_threshold: 1000  # Token IDs < 1000 are special tokens
+default_delay_tokens: 6  # 480ms default delay
+
+# Buffer & Streaming Configuration
+chunk_duration_s: 0.1
+arecord_block_samples: 256
+ring_buffer_max_s: 600  # Keep last 10 minutes of audio

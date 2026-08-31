@@ -1,0 +1,19 @@
+# Voxtral Realtime Client — pinned dependencies
+# Verified on Python 3.10.19
+
+# Required
+websockets==16.0
+numpy==2.2.6
+PyYAML==6.0.3
+
+# Required for --detect-language
+lingua-language-detector==2.1.1
+
+# Required for --diarize
+aiohttp==3.13.3
+
+# Optional: microphone capture (falls back to arecord on Linux if absent)
+sounddevice==0.5.6
+
+# Optional: local token decoding fallback (used only when delta text is empty)
+mistral_common==1.11.7
